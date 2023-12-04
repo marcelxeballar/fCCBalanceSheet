@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: #0a0a23; 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    max-width: 700px;
+    margin: 5vh auto;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.2);
+}
+
+header {
+    width: 100%;
+    max-height: 150px;
+    min-height: 125px;
+    height: 10vh;
+}
+
+main header h1 {
+    margin: 1rem 0 0 1rem;
+}
+
+main header p {
+    margin: 0 0 0 1rem;;
+}
+
+.balance-div {
+    height: auto;
+    width: 100%;
+}
+
+.balance-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    background-color: white;
+}
+
+.balance-content:first-of-type {
+    background-color: #0a0a23;
+}
+
+
+.balance-name {
+    flex-grow: 1;
+    margin-right: 0.5rem;
+}
+
+.title {
+    padding-left: 1rem;
+    color: #356eaf;
+    font-size: 1.2rem;
+}
+
+.title-name {
+    margin-left: 1rem;
+    padding: 3px 0 3px 5px;
+    width: 100%;
+    color: #0a0a23;
+    background-color: lightgray;
+    font-size: 1em;
+
+}
+
+.balance-amount {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    background-color: lightgrey;  
+    width: 40%;
+    margin-right: 10px;
+}
+
+.balance-content:first-of-type .balance-amount {
+    background-color: #0a0a23 !important;
+}
+
+.balance-content:first-of-type .balance-amount p {
+    color: white;
+}
+
+.total {
+    background-color: white;
+    border-bottom: 4px double black;
+
+}
+
+.balance-amount p {
+    padding: 3px 0 3px 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-right: 0.5rem;
+    color:  #0a0a23;
+    margin-right: 1rem;
+    font-size: 1em;
+}
+
+.balance-content:last-of-type {
+    margin-bottom: 30px;
+}
+
+.description p {
+    padding-left: 1rem;
+}
+@media screen and (min-width: 1350px){
+    main {
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        height: auto;
+        width: 95vw;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-height: 80px;
+        min-height: 65px;
+    }
+    main header h1 {
+        font-size: 1.2rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    main header p {
+        font-size: 0.8rem;
+        margin: 0;
+    }
+    .balance-amount  { 
+        width: 30%;
+        justify-content:space-around
+    }
+
+    .balance-amount p, .title-name, .title, .description p {
+        font-size: 0.8rem;;
+    }
+
+    .balance-content {
+        margin: 0;
+        padding: 0;
+        height: 3vh;
+    }
+
+
+
+}
